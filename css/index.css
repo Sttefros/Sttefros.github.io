@@ -61,6 +61,16 @@ body {
     background-color:  #FFC300
     ;
 }
+.aboout .abous {
+    background: rgb(110,105,190);
+    background: linear-gradient(29deg, rgba(110,105,190,1) 0%, rgba(22,68,105,1) 43%, rgba(26,127,147,1) 100%); 
+    background-color:  #FFC300 ;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.aboout p {
+    color: whitesmoke;
+}
 .about p {
     color: whitesmoke;
     padding: 1.5rem;
@@ -128,6 +138,12 @@ body {
 }
 
 
+/* HERRAMIENTAS */
+#herramientas img{
+    height: 100px;
+    width: 100px;
+}
+
 /* FOOTER */
 .footer {
     background: rgb(110, 105, 190);
@@ -136,17 +152,22 @@ body {
     color: #FFC300;
     text-align: center;
     justify-content: center;
+    align-items: center;
     font-size: 1.0rem;
 }
 .links {
     display: inline-flex;
     list-style: none;
-    color: #FFC300;
 }
 .links li {
     color: #FFC300;
     font-size: 2.5rem;
     margin: 10px;
+}
+
+.footer img {
+    height: 50px;
+    width: 50px;
 }
 
 
@@ -163,8 +184,8 @@ body {
 	justify-content:center;
     }
     .about img{
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
 
 	
