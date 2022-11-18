@@ -171,22 +171,22 @@ body {
 }
 
 
+/* COLORES */
+.color-amaraillo-neon{
+    text-shadow: 1px 1px 5px #000, 0 0 10px #a5e721, 0 0 20px #ffff;
+}
+
+.amarillo-txt{
+    color: #FFC300;
+}
+
+.color-amaraillo-neon-box{
+    box-shadow: 1px 1px 5px #000, 0 0 10px #a5e721, 0 0 20px #ffff;
+}
 
 @media (max-width: 900px){
 	
-	.about {
-    background-image: url(../img/bgestrellas.jpg);
-    display: grid;
-    grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr;
-    font-size: 1.3rem;
-	align-items:center;
-	justify-content:center;
-    }
-    .about img{
-        width: 150px;
-        height: 150px;
-    }
+
 
 	
 	/* TRABAJOS */
