@@ -1,23 +1,23 @@
-$(document).ready(function() {
-    $('.owl-carousel').owlCarousel({
-        animateOut: 'fade',
-        center: true,
-        items: 2,
+$(document).ready(function () {
+    //CARRUSELL
+    $(".owl-carousel").owlCarousel({
         loop: true,
-        margin: 5,
+        margin: 20,
+        nav: false,
+        items: 2,
+        autoplay: false,
+        autoplayTimeout: 2500,
+        smartSpeed: 800,
+        dots: false,
         responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 4
-            }
+            0: { items: 2 },
+            576: { items: 3 },
+            768: { items: 5 },
+            992: { items: 6 },
+            1200: { items: 7 }
         }
     });
-
+    //CLICK ITEM DEL CARRUSEL
     $(document).on('click', '.owl-item', function() {
         owlIndex = $(this).index();
         count = document.querySelectorAll(".owl-item.active").length;
@@ -27,7 +27,13 @@ $(document).ready(function() {
       $("nav .nav-link").on("click", function(){
         $("nav").find(".active").removeClass("active");
         $(this).addClass("active");
-     });
+      });
+
+
+    /** BOTON DARKMODE*/
+    document.getElementById("darkToggle").addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+    });
 
    
 

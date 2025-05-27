@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <title>Portafolio</title>
     <link rel="stylesheet" href="./css/index.css">  
@@ -28,8 +27,8 @@
             <div class="container-fluid header1">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -50,203 +49,234 @@
                             <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
-                    <a rel="noopener noreferrer" type="button" href="indexcv.html" class="btn btn-outline-warning"
-                        target="blank__">Descargar
-                        CV
+                    <!--BOTON DARKMODE-->
+                    <!--<button id="darkToggle" class="btn btn-outline-warning position-fixed bottom-0 end-0 m-3">🌙</button>-->
+                    <!--BOTON VISUALIZAR CV.PDF-->
+                    <a href="./Docs/CV Felipe Perez Oyarzun.pdf" class="btn btn-outline-warning mt-lg-0 mt-3" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-file-earmark-person-fill btn-cv"></i> Ver CV actualizado
                     </a>
                 </div>
             </div>
         </nav>
     </div>
 
-    <div class="aboout row " id="about">
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 justify-content-center d-flex">
-            <img class="img-fluid" src="./img/programador.png" alt="programador png">
+    <div class="about row " id="about">
+        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center mb-4 mb-md-0">
+            <img class="img-fluid" src="./img/programador.png" alt="Imagen de programador">
         </div>
         <div class="col abous m-auto mx-5 rounded">
             <p>
-                Hola, mi nombre es Felipe
+                Hola, soy Felipe,
                 <br>
-                Soy programador junior y soporte TI
+                programador junior y técnico en soporte TI 💻
                 <br>
-                Mi objetivo principal es mejorar constantemente mis habilidades en el desarrollo de
-                soluciones informáticas, tambien lograr entregar una servicio
-                de calidad y eficaz, mis hobbies
-                son el baloncesto y los videojuegos.
-                Duoc UC - Analista Programador Computacional
+                Me formé como Analista Programador Computacional en Duoc UC y actualmente estoy enfocado en seguir creciendo en el mundo del desarrollo de software.
+                🚀 🏀 Fuera del código, me gusta el baloncesto y entrenar en el gimnasio — ¡me ayudan a mantener el enfoque, la disciplina y el trabajo en equipo!
             </p>
         </div>
     </div>
 
-    <div class="row" id="proyectos">
-        <div class="card" style="width: 18rem; margin: 10px;">
-            <div class="card-body">
-                <h5 class="card-title pb-3">Sistema de ventas</h5>
-                <p class="card-text">Con este proyecto se logró implementar la gestión de inventario,
-                    otorgando información relevante a la hora de toma de decisiones. Participe activamente
-                    en la gestión del proyecto, así también en el desarrollo de los distintos módulos que
-                    lo componen.
-                </p>
-                <div class="col pt-2">
-                    <a rel="noopener noreferrer" href="https://github.com/Sttefros/sistema-de-ventas" target="_blank"
-                        type="button" class="btn btns btn-outline-warning">Ver Codigo</a>
+
+    <!-- PROYECTOS -->
+    <div class="container mt-4" id="proyectos">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            <!-- Empleado API -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title pb-3">Empleado API</h5>
+                        <p class="card-text flex-grow-1">
+                            Web API RESTful desarrollada con ASP.NET Core 8 y Entity Framework Core,
+                            que permite realizar operaciones CRUD sobre registros de empleados.
+                            Incluye conexión a base de datos SQL Server, manejo de errores y estructura escalable para futuras integraciones.
+                        </p>
+                        <div class="pt-3 mt-auto text-end">
+                            <a href="https://github.com/Sttefros/EmpleadoAPI" target="_blank" class="btn btn-outline-warning">Ver Código</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card " style="width: 18rem; margin: 10px;">
-            <div class="card-body">
-                <h5 class="card-title pb-3">Inventario TI</h5>
-                <p class="card-text">El objetivo del proyecto es mantener el control de inventario de
-                    las provisiones equipos, y pueden ser administrados por diferentes usuarios
-                    dependiendo de las credenciales que él posee
-                </p>
-                <br>
-                <div class="col pt-2">
-                    <a rel="noopener noreferrer" href="https://github.com/Sttefros/Miis-inventario-informatico"
-                        target="_blank" type="button" class="btn btns btn-outline-warning">Ver Codigo</a>
+
+            <!-- Sistema de ventas -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title pb-3">Sistema de ventas</h5>
+                        <p class="card-text flex-grow-1">
+                            Con este proyecto se logró implementar la gestión de inventario, otorgando información relevante para la toma de decisiones.
+                            Participé activamente en la gestión del proyecto y en el desarrollo de los distintos módulos.
+                        </p>
+                        <div class="pt-3 mt-auto text-end">
+                            <a href="https://github.com/Sttefros/sistema-de-ventas" target="_blank" class="btn btn-outline-warning">Ver Código</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card " style="width: 18rem; margin: 10px;">
-            <div class="card-body">
-                <h5 class="card-title pb-3 ">Consumo api clima</h5>
-                <p class="card-text ">Consumo de API openweather, con esta aplicación
-                    Podrás acceder a la información climatológica actual y de los próximos 4
-                    días,
-                    esto a través de la geolocalización de los navegadores web
-                </p>
-            </div>
-            <div class="col pt-2">
-                <a href="https://github.com/Sttefros/api-clima" rel="noopener noreferrer" target="_blank" type="button"
-                    class="btn btns btn-outline-warning">Ver Codigo</a>
-                <a rel="noopener noreferrer" href="https://oke-sentries.000webhostapp.com/" target="_blank"
-                    type="button" class="btn btns btn-outline-warning">Ver Sitio</a>
-            </div>
-        </div>
-        <div class="card " style="width: 18rem; margin: 10px;">
-            <div class="card-body">
-                <h5 class="card-title pb-3">Consumo api rick and morty</h5>
-                <p class="card-text">Consumo de API Rick and Morty donde
-                    se podrá ver los distintos personajes de la seria como las
-                    distintas locaciones que componen el universo de rick
-                    and morty.
-                </p>
-            </div>
-            <div class="col pt-2">
-                <a rel="noopener noreferrer" target="_blank" href="https://github.com/Sttefros/api-rick-and-morty"
-                    type="button" class="btn btns btn-outline-warning">Ver Codigo</a>
-                <a rel="noopener noreferrer" href="https://api-rick-and-morty-swart.vercel.app/" target="_blank"
-                    type="button" class="btn btns btn-outline-warning">Ver Sitio</a>
-            </div>
-        </div>
-        <div class="card " style="width: 18rem; margin: 10px;">
-            <div class="card-body">
-                <h5 class="card-title pb-3">Contador de click</h5>
-                <p class="card-text">Haga clic en el contador, verifique si su mouse
-                    realmente funciona bien.
-                </p>
-                <br>
-                <div class="col pt-2">
-                    <a rel="noopener noreferrer" target="_blank" href="https://github.com/Sttefros/contador-de-click"
-                        type="button" class="btn btns btn-outline-warning">Ver Codigo</a>
+
+            <!-- Inventario TI -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title pb-3">Inventario TI</h5>
+                        <p class="card-text flex-grow-1">
+                            Proyecto para controlar el inventario de equipos y provisiones TI.
+                            La administración del sistema varía según las credenciales del usuario.
+                        </p>
+                        <div class="pt-3 mt-auto text-end">
+                            <a href="https://github.com/Sttefros/Miis-inventario-informatico" target="_blank" class="btn btn-outline-warning">Ver Código</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card " style="width: 18rem; margin: 10px;">
-            <div class="card-body">
-                <h5 class="card-title ">flying poring game</h5>
-                <p class="card-text">
-                    Juego inspirado en Flappy Bird, con temática
-                    del videojuego Ragnarok Online..
-                </p>
-                <div class="col ">
-                    <a rel="noopener noreferrer" target="_blank" href="https://github.com/Sttefros/flying-poring"
-                        type="button" class="btn btns btn-outline-warning">Ver Codigo</a>
+
+            <!-- Consumo API Clima -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title pb-3">Consumo API Clima</h5>
+                        <p class="card-text flex-grow-1">
+                            Aplicación que consume la API de OpenWeather para mostrar el clima actual y pronóstico de 4 días, utilizando geolocalización del navegador.
+                        </p>
+                        <div class="pt-3 mt-auto text-end">
+                            <a href="https://github.com/Sttefros/api-clima" target="_blank" class="btn btn-outline-warning">Ver Código</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card " style="width: 18rem; margin: 10px;">
-            <a rel="noopener noreferrer" href="file:///C:/Users/Sttefros/Desktop/Reposiroty/portafolio/index.html">
-                <div class="card-body">
-                    <h5 class="card-title pb-3">Portafolio</h5>
-                    <p class="card-text">
-                        Portafolio creado como primera página web.
-                    </p>
-                    <br>
+
+            <!-- Consumo API Rick and Morty -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title pb-3">Consumo API Rick and Morty</h5>
+                        <p class="card-text flex-grow-1">
+                            Consumo de la API de Rick and Morty para mostrar personajes y locaciones del universo de la serie.
+                        </p>
+                        <div class="pt-3 mt-auto text-end">
+                            <a href="https://github.com/Sttefros/api-rick-and-morty" target="_blank" class="btn btn-outline-warning">Ver Código</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col pt-2">
-                    <a type="button" class="btn btns btn-outline-warning">Ver Codigo</a>
+            </div>
+
+            <!-- Contador de Clicks -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title pb-3">Contador de click</h5>
+                        <p class="card-text flex-grow-1">
+                            Haga clic en el contador, verifique si su mouse
+                            realmente funciona bien.
+                        </p>
+                        <div class="pt-3 mt-auto text-end">
+                            <a href="https://github.com/Sttefros/contador-de-click" target="_blank" class="btn btn-outline-warning">Ver Código</a>
+
+                        </div>
+                    </div>
                 </div>
-            </a>
+            </div>
+
+            <!-- Portafolio -->
+            <!--<div class="col">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title pb-3">Portafolio</h5>
+                        <p class="card-text flex-grow-1">
+                            Portafolio creado como primera página web.
+                        </p>
+                        <div class="pt-3 mt-auto text-end">
+                            <a href="file:///C:/Users/Sttefros/Desktop/Reposiroty/portafolio/index.html" target="_blank" class="btn btn-outline-warning">Ver Código</a>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+
         </div>
     </div>
 
-    <div class="row text-center mt-4 pe-0" id="tecnologias">
-        <h5>Tecnologías</h5>
+    <section class="technologies container mt-5" id="tecnologias">
+        <h5 class="text-center mb-4">Tecnologías con las que trabajo</h5>
+        <div class="owl-carousel owl-theme fade-in">
 
-        <div class="owl-carousel owl-theme pe-0">
-
-            <div class="slider-card item">
-                <img src="./img/html-5.png" alt="" class="card-img">
+            <div>
+                <img src="./img/html-5.png" alt="HTML5" class="tech-icon">
             </div>
 
-            <div class="slider-card item">
-                <img src="./img/css-3.png" alt="" class="card-img">
+            <div>
+                <img src="./img/css-3.png" alt="CSS3" class="tech-icon">
             </div>
 
-            <div class="slider-card item">
-                <img src="./img/js.png" alt="" class="card-img">
+            <div ">
+                <img src="./img/js.png" alt="JavaScript" class="tech-icon">
             </div>
 
-            <div class="slider-card item">
-                <img src="./img/php.png" alt="" class="card-img">
+            <div>
+                <img src="./img/react.png" alt="React" class="tech-icon">
             </div>
 
-            <div class="slider-card item">
-                <img src="./img/react.png" alt="" class="card-img">
+            <div>
+                <img src="./img/php.png" alt="PHP" class="tech-icon">
+            </div>
+
+            <!--<div >
+                <img src="./img/puntonetcore.png" alt=".NET" class="tech-icon">
+            </div>-->
+
+            <div>
+                <img src="./img/mysql.png" alt="SQL Server" class="tech-icon">
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- HERRAMIENTAS -->
+    <div class="container my-5" id="herramientas">
+        <h5 class="text-center mb-4">Herramientas</h5>
+        <div class="row row-cols-2 row-cols-md-4 g-4 justify-content-center">
+
+            <!-- GIT -->
+            <div class="col d-flex justify-content-center">
+                <img src="./img/git.png" alt="Logo GIT" class="img-fluid" style="max-height: 80px;">
+            </div>
+
+            <!-- TeamViewer -->
+            <div class="col d-flex justify-content-center">
+                <img src="./img/teamviewer.png" alt="Logo TeamViewer" class="img-fluid" style="max-height: 80px;">
+            </div>
+
+            <!-- PostgreSQL -->
+            <div class="col d-flex justify-content-center">
+                <img src="./img/postgre.png" alt="Logo PostgreSQL" class="img-fluid" style="max-height: 80px;">
+            </div>
+
+            <!-- MySQL -->
+            <div class="col d-flex justify-content-center">
+                <img src="./img/mysql.png" alt="Logo MySQL" class="img-fluid" style="max-height: 80px;">
+            </div>
+
+            <!-- Postman -->
+            <div class="col d-flex justify-content-center">
+                <img src="./img/postman.png" alt="Logo Postman" class="img-fluid" style="max-height: 80px;">
+            </div>
+
+            <!-- Active Directory -->
+            <div class="col d-flex justify-content-center">
+                <img src="./img/ad.png" alt="Logo Active Directory" class="img-fluid" style="max-height: 80px;">
+            </div>
+
+            <!-- VS Code -->
+            <div class="col d-flex justify-content-center">
+                <img src="./img/vscode.png.png" alt="Logo VSCode" class="img-fluid" style="max-height: 80px;">
+            </div>
+
+            <!-- VS -->
+            <div class="col d-flex justify-content-center">
+                <img src="./img/Visual Studio logo.png" alt="Logo VISUAL STUDIO" class="img-fluid" style="max-height: 80px;">
             </div>
         </div>
-    </div>
-
-    <div class="row text-center m-4" id="herramientas">
-        <h5>Herramientas</h5>
-
-        <div class="row mt-4 mb-2 col-sm-6 col-md-12 col-lg-12 col-xl-12">
-            <div class="col-md m-2">
-                <img src="./img/git.png" alt="" class="card-img">
-            </div>
-
-            <div class="col-md m-2">
-                <img src="./img/teamviewer.png" alt="" class="card-img">
-            </div>
-
-            <div class="col-md m-2">
-                <img src="./img/postgre.png" alt="" class="card-img">
-            </div>
-
-            <div class="col-md m-2">
-                <img src="./img/mysql.png" alt="" class="card-img">
-            </div>
-        </div>
-
-        <div class="row mb-4 col-sm-6 col-md-12 col-lg-12 col-xl-12">
-            <div class="col-md m-2">
-                <img src="./img/postman.png" alt="" class="card-img">
-            </div>
-
-            <div class="col-md m-2">
-                <img src="./img/ad.png" alt="" class="card-img">
-            </div>
-
-            <div class="col-md m-2">
-                <img src="./img/vscode.png.png" alt="" class="card-img">
-            </div>
-
-            <div class="col-md m-2">
-                <img src="./img/glpi.png" alt="" class="card-img">
-            </div>
-        </div>
-
     </div>
 
     <div class="row footer" id="contacto">
@@ -256,7 +286,7 @@
         <ul class="links align-items-center justify-content-center">
             <li>
                 <a class="color-amaraillo-neon" rel="noopener noreferrer" href="https://github.com/Sttefros"
-                    target="blank__">
+                   target="_blank">
                     <i class="bi bi-github amarillo-txt"></i>
                 </a>
             </li>
@@ -276,35 +306,35 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous"></script>
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 
 
     <!--
-⠀⠀⠀⠀⢀⣀⣀⡀⠀⠀⠀⠀⠀⠀⣀⣤⣴⠶⠿⠛⠛⠛⠛⠛⠛⠿⠷⣶⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⣠⡾⠟⠛⠛⠛⠿⣦⣄⠀⣠⣴⠿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠻⢷⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⣼⠀⠀⠀⠀⠀⠀⠈⢙⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⢰⣿⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⠙⢿⣦⠀⠀⠀⠀⠀⠀⠀
-⢸⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡎⠉⢱⡀⠀⠀⠀⠀⡜⠁⠹⡄⠀⠀⠀⠀⠀⠀⠀⠹⣷⡀⠀⠀⠀⠀⠀
-⠈⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⡇⠀⠀⠀⢰⡇⠀⢠⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣷⠀⠀⠀⠀⠀
-⠀⢹⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣶⣿⡇⠀⠀⠀⢸⣶⣾⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣧⠀⠀⠀⠀⠀
-⠀⢻⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⠀⠀⠀⠸⣿⣿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣆⠀⠀⠀⠀
-⠀⠀⠀⠹⣷⡴⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⠁⠀⠀⠀⠀⢿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⡀⠀⠀
-⠀⠀⠀⢸⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠁⢠⣶⣶⣶⣦⠈⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡀⠀
-⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣏⠀⢈⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣇⠀
-⠀⠀⠀⠀⠘⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀
-⠀⠀⠀⠀⠀⢹⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⡟⠀
-⠀⠀⠀⠀⠀⢿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣄⠀⠀⠀⣀⣴⡿⠁⠀
-⠀⠀⠀⠀⠀⠀⣸⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣨⣿⣿⡛⠉⠀⠀⠀
-⠀⠀⠀⢀⣴⠋⠁⠙⢧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠏⠈⠙⠻⣶⣄⠀⠀⠀
-⠀⢀⣴⣿⣯⣴⡆⠀⠀⠀⠙⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⠟⠁⠀⠀⢰⣶⣬⣷⡀⠀
-⠀⣾⠏⢸⣿⠿⠃⠀⠀⠀⠀⠀⠙⠳⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠶⠋⠀⠀⠀⠀⠀⠈⠻⢿⡿⠹⣿⡀
-⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠲⢦⣤⣤⣀⣀⢀⣀⣠⣤⣤⠶⠛⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣹⡇
-⠀⠻⣷⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣬⣿⠟⠛⠻⣿⣯⣥⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣴⡿⠃
-⠀⠀⠀⠛⠛⠿⠿⠶⠶⠶⠶⠶⠿⠿⠟⠛⠛⠋⠉⠀⠀⠀⠀⠀⠉⠉⠛⠛⠻⠿⠿⠿⠶⠶⠶⠶⠾⠿⠛⠛⠋⠁⠀
-[Sttefros 2022]
--->
+    ⠀⠀⠀⠀⢀⣀⣀⡀⠀⠀⠀⠀⠀⠀⣀⣤⣴⠶⠿⠛⠛⠛⠛⠛⠛⠿⠷⣶⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+    ⠀⠀⣠⡾⠟⠛⠛⠛⠿⣦⣄⠀⣠⣴⠿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠻⢷⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+    ⠀⣼⠀⠀⠀⠀⠀⠀⠈⢙⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+    ⢰⣿⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⠙⢿⣦⠀⠀⠀⠀⠀⠀⠀
+    ⢸⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡎⠉⢱⡀⠀⠀⠀⠀⡜⠁⠹⡄⠀⠀⠀⠀⠀⠀⠀⠹⣷⡀⠀⠀⠀⠀⠀
+    ⠈⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⡇⠀⠀⠀⢰⡇⠀⢠⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣷⠀⠀⠀⠀⠀
+    ⠀⢹⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣶⣿⡇⠀⠀⠀⢸⣶⣾⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣧⠀⠀⠀⠀⠀
+    ⠀⢻⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⠀⠀⠀⠸⣿⣿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣆⠀⠀⠀⠀
+    ⠀⠀⠀⠹⣷⡴⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⠁⠀⠀⠀⠀⢿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⡀⠀⠀
+    ⠀⠀⠀⢸⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠁⢠⣶⣶⣶⣦⠈⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡀⠀
+    ⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣏⠀⢈⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣇⠀
+    ⠀⠀⠀⠀⠘⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀
+    ⠀⠀⠀⠀⠀⢹⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⡟⠀
+    ⠀⠀⠀⠀⠀⢿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣄⠀⠀⠀⣀⣴⡿⠁⠀
+    ⠀⠀⠀⠀⠀⠀⣸⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣨⣿⣿⡛⠉⠀⠀⠀
+    ⠀⠀⠀⢀⣴⠋⠁⠙⢧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠏⠈⠙⠻⣶⣄⠀⠀⠀
+    ⠀⢀⣴⣿⣯⣴⡆⠀⠀⠀⠙⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⠟⠁⠀⠀⢰⣶⣬⣷⡀⠀
+    ⠀⣾⠏⢸⣿⠿⠃⠀⠀⠀⠀⠀⠙⠳⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠶⠋⠀⠀⠀⠀⠀⠈⠻⢿⡿⠹⣿⡀
+    ⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠲⢦⣤⣤⣀⣀⢀⣀⣠⣤⣤⠶⠛⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣹⡇
+    ⠀⠻⣷⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣬⣿⠟⠛⠻⣿⣯⣥⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣴⡿⠃
+    ⠀⠀⠀⠛⠛⠿⠿⠶⠶⠶⠶⠶⠿⠿⠟⠛⠛⠋⠉⠀⠀⠀⠀⠀⠉⠉⠛⠛⠻⠿⠿⠿⠶⠶⠶⠶⠾⠿⠛⠛⠋⠁⠀
+    [Sttefros 2025]
+    -->
 </body>
 
 </html>

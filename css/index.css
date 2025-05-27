@@ -17,7 +17,15 @@ body {
     font-family: 'retro_gamingregular', 'Roboto', sans-serif;
     min-height: 100vh;
 }
+/* DARKMODE*/
+.dark-mode {
+    background-color: #121212 !important;
+    color: #f5f5f5 !important;
+}
 
+.dark-mode .tech-icon {
+    filter: brightness(0.9) drop-shadow(0 0 2px #00ffe0);
+}
 
 /* NAVBAR */
 .header1 {
@@ -45,40 +53,36 @@ body {
     color:  #FFC300 ;
     text-shadow: -10px -5px 3px #4321bf,   -15px -10px 5px #42dd36, -20px -15px 7px #dd7c31;
 }
+.navbar .btn-cv {
+    margin-left: auto;
+    margin-right: 1rem;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    border: none;
+    font-family: 'retro_gamingregular', 'Roboto', sans-serif;
+}
 
 
 /* ABOUT */
 .about {
     background-image: url(../img/bgestrellas.jpg);
-    display: grid;
     grid-template-columns: 1fr 1fr;
     font-size: 1.3rem;
-    padding: 2.0rem;
 }
-.about .row {
-    background: rgb(110, 105, 190);
-    background: linear-gradient(29deg, rgba(110, 105, 190, 1) 0%, rgba(22, 68, 105, 1) 43%, rgba(26, 127, 147, 1) 100%);
-    background-color:  #FFC300
-    ;
-}
-.aboout .abous {
-    background: rgb(110,105,190);
-    background: linear-gradient(29deg, rgba(110,105,190,1) 0%, rgba(22,68,105,1) 43%, rgba(26,127,147,1) 100%); 
-    background-color:  #FFC300 ;
-    text-decoration: none;
-    color: whitesmoke;
-}
-.aboout p {
-    color: whitesmoke;
-}
-.about p {
-    color: whitesmoke;
-    padding: 1.5rem;
-}
-.education {
-    color: whitesmoke;
-    padding: 1.5rem;
-}
+
+    .about .row,
+    .about .abous {
+        background: linear-gradient(29deg, rgba(110,105,190,1) 0%, rgba(22,68,105,1) 43%, rgba(26,127,147,1) 100%);
+        background-color: #FFC300;
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    .about p,
+    .education {
+        color: whitesmoke;
+        padding: 1.5rem;
+    }
 
 
 /* TRABAJOS */
@@ -91,20 +95,49 @@ body {
 .row {
 	justify-content:center;
 }
-.card{
-   background: rgb(110,105,190);
-   background: linear-gradient(29deg, rgba(110,105,190,1) 0%, rgba(22,68,105,1) 43%, rgba(26,127,147,1) 100%); 
-   background-color:  #FFC300 ;
-   text-decoration: none;
-   color: whitesmoke;
+.card {
+    min-height: 380px;
+    margin: 10px;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(29deg, rgba(110,105,190,1) 0%, rgba(22,68,105,1) 43%, rgba(26,127,147,1) 100%);
+    color: whitesmoke;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-text {
+    flex-grow: 1;
+}
+
 .card a {
     text-decoration: none;
     color: whitesmoke;
 }
-.btns{
+
+.btns {
     font-size: small;
+    padding: 5px 12px;
 }
+
 
 
 /* IMAGEN FONDO */
@@ -118,24 +151,70 @@ body {
 
 
 /* TECNOLOGIAS */
+/* Fondo y separación */
 .technologies {
-    background: url(../img/estrellas2.jpg);
-    color: #FFC300;
+    margin-block: 1rem;
+    padding-bottom:2rem;
+    background-color: #f9f9f9;
+    border-top: 2px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
 }
-.technologies h5{
-	padding-top: 20px;
-	font-size:1.5rem;
-    text-shadow: -10px -5px 3px #4321bf,   -15px -10px 5px #42dd36, -20px -15px 7px #dd7c31;
+
+    .technologies h5 {
+        font-size: 1.5rem;
+        text-shadow: -2px -1px 1px #4321bf, -4px -2px 2px #42dd36, -6px -3px 3px #dd7c31;
+    }
+
+/* Íconos */
+.tech-icon {
+    max-width: 90px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.9;
+    display: block;
+    margin: 0 auto;
 }
-.owl-item.active.center {
-    transform: scale(2);
+
+    .tech-icon:hover {
+        transform: scale(1.3);
+        opacity: 1;
+        z-index: 2;
+        position: relative;
+    }
+
+/* Carrusel */
+.tech-carousel {
+    position: relative;
+    z-index: 1;
+    padding: 0px 0;
 }
-.slider-card {
-    cursor: url('http://anuary.com/dev/hp/pad3/public/images/hand-cursor.png'), pointer;
-    padding: 0px 0px;
-    border-radius: 5px 5px 0px 0px;
-    transform: scale(0.3);
+
+/* Navegación del carrusel */
+.owl-nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    padding: 0 10px;
+    pointer-events: none;
 }
+
+    .owl-nav button {
+        background-color: #000000cc;
+        color: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 18px !important;
+        pointer-events: auto;
+        transition: background 0.3s ease;
+    }
+
+        .owl-nav button:hover {
+            background-color: #333;
+        }
+
 
 
 /* HERRAMIENTAS */
@@ -184,19 +263,21 @@ body {
     box-shadow: 1px 1px 5px #000, 0 0 10px #a5e721, 0 0 20px #ffff;
 }
 
+@media (max-width: 768px) {
+    .navbar .btn-cv {
+        margin: 0.5rem auto;
+        display: block;
+        width: fit-content;
+    }
+}
+
 @media (max-width: 900px){
-	
-
-
-	
 	/* TRABAJOS */
     .mywork {
         display: grid;
         grid-template-rows: repeat(6,1fr);
         color: whitesmoke;
     }
-
-
     /* IMAGEN FONDO */
     .imagen-fondo {
         background-image: url(../img/estrellas1vertical.jpg);
@@ -206,8 +287,6 @@ body {
         height: 55em;
         align-items:center;
     }
-	
-
     /* TECNOLOGIAS */
     .tecnologias {
         background: url(../img/estrellas2vertical.jpg);
@@ -227,8 +306,6 @@ body {
         color: #fff;
         filter: blur(0);
     }
-
-
     /* FOOTER */
     .footer {
         background: rgb(110, 105, 190);
